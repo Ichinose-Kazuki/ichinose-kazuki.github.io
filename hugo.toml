@@ -9,18 +9,18 @@ pygmentsUseClasses = true
   author = "ikazuk"
   description = "Test (description)"
   github = "Ichinose-Kazuki"
-  facebook = "Test (facebook)"
+  # facebook = "Test (facebook)"
   twitter = "kazukiichinose"
   linkedin = "Test (linkedin)"
-  instagram = "Test (instagram)"
-  tumblr = "Test (tumblr)"
+  # instagram = "Test (instagram)"
+  # tumblr = "Test (tumblr)"
   email = "Test (email)"
   url = "https://ikaz.uk"
   keywords = "blog, Test (keywords)"
   rss = true
   lastmod = true
   favicon = "/images/github-mark.png"
-  avatar = "/images/avatar.png"
+  avatar = "/images/aiavatar.png"
   headerIcon = "/images/github-mark-white.png"
   location = "Japan"
   userStatusEmoji = "😀"
@@ -40,11 +40,11 @@ pygmentsUseClasses = true
     distractionFreeMode = false # Enable hot key (cmd|ctrl + enter) submit comment.
   [[params.links]]
     title = "Link"
-    href = "https://github.com/meik2333"
+    href = "https://github.com/Ichinose-Kazuki"
   [[params.links]]
     title = "Link2"
-    href = "https://meik2333.com"
-    icon = "https://meik2333.com/images/avatar.png"
+    href = "https://ikaz.uk"
+    icon = "https://ikaz.uk/images/aiavatar.png"
 
 [frontmatter]
   lastmod = ["lastmod", ":fileModTime", ":default"]

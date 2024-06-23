@@ -1,0 +1,55 @@
+name: Deploy Hugo on GitHub Pages
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["main"]
+    
+  pull_request:
+  
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-22.04
+    env:
+      HUGO_CACHEDIR: /tmp/hugo_cache # <- Define the env variable here, so that Hugo's cache dir is now predictible in your workflow and doesn't depend on the Hugo's version you're using.
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Hugo setup
+        uses: peaceiris/actions-hugo@v3.0.0
+      - uses: actions/cache@v4
+        with:
+          path: ${{ env.HUGO_CACHEDIR }} # <- Use the same env variable just right here
+          key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-hugomod-
+      - name: Build
+        run: hugo --minify
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-22.04
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Purge cache
+        uses: jakejarvis/cloudflare-purge-action@v0.3.0
+        env:
+          CLOUDFLARE_ZONE: ${{ secrets.CLOUDFLARE_ZONE }}
+          CLOUDFLARE_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN_CACHE_PURGE }}

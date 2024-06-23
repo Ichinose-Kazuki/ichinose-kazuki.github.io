@@ -10,6 +10,11 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+# これを指定していると、重複してActionsが走った時に前のをキャンセルしてくれる
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
 jobs:
   # Build job
   build:
@@ -33,7 +38,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-hugomod-
       - name: Build
-        run: hugo --minify
+        run: hugo --destination _site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 

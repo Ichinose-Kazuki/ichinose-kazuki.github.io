@@ -10,6 +10,11 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 # これを指定していると、重複してActionsが走った時に前のをキャンセルしてくれる
 concurrency:
   group: "pages"

@@ -38,13 +38,13 @@ pygmentsUseClasses = true
     pagerDirection = "last" # Comment sorting direction, available values are 'last' and 'first'.
     createIssueManually = true # 设置为true，如果是管理员登录，会自动创建issue，如果是false，需要管理员手动添加第一个评论(issue)
     distractionFreeMode = false # Enable hot key (cmd|ctrl + enter) submit comment.
-  [[params.links]]
-    title = "Link"
-    href = "https://github.com/Ichinose-Kazuki"
-  [[params.links]]
-    title = "Link2"
-    href = "https://ikaz.uk"
-    icon = "https://ikaz.uk/images/aiavatar.png"
+  # [[params.links]]
+  #   title = "Link"
+  #   href = "https://github.com/Ichinose-Kazuki"
+  # [[params.links]]
+  #   title = "Link2"
+  #   href = "https://ikaz.uk"
+  #   icon = "https://ikaz.uk/images/aiavatar.png"
 
 [frontmatter]
   lastmod = ["lastmod", ":fileModTime", ":default"]

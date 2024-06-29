@@ -708,6 +708,9 @@
       }
     }
   },
+  "redirects": {
+    "https://github.com/Ichinose-Kazuki/lume-github-style/raw/main/mod.ts": "https://raw.githubusercontent.com/Ichinose-Kazuki/lume-github-style/main/mod.ts"
+  },
   "remote": {
     "https://cdn.jsdelivr.net/gh/lumeland/cms@v0.5.2/adapters/lume.ts": "e33373886b9920515a0f0da9c9c4d38974a66e447a65925ca522be41e7491af6",
     "https://cdn.jsdelivr.net/gh/lumeland/cms@v0.5.2/core/git.ts": "ebcb06df6c89ad74dc3194d78c5a6bb88c54305e8f79b177c1f3151296760e98",
@@ -985,6 +988,10 @@
     "https://deno.land/x/xml@5.4.7/mod.ts": "b59e5c0dd9fe7ed597c21c39aacf089aa82fe5c5eaad3f411a43a9c104359f4e",
     "https://deno.land/x/xml@5.4.7/parse.ts": "70334eee74b738d8c4cf1f44b3a05834c3f0ba4dc4e09eea84a2286fd86bcf89",
     "https://deno.land/x/xml@5.4.7/stringify.ts": "8d1a48125ed65a0158aed333688c4eed77120316ac0f2c2c92d216dbcb092033",
-    "https://deno.land/x/xml@5.4.7/wasm_xml_parser/wasm_xml_parser.js": "924706e40c2a0dfd21d9665d56fb098122e0955e3d8ad5e14c1931b4dfd25eaa"
+    "https://deno.land/x/xml@5.4.7/wasm_xml_parser/wasm_xml_parser.js": "924706e40c2a0dfd21d9665d56fb098122e0955e3d8ad5e14c1931b4dfd25eaa",
+    "https://raw.githubusercontent.com/Ichinose-Kazuki/lume-github-style/main/mod.ts": "18cc116c75ad85dc3e86407487f5555ac8b051b26ba90dd7f78cc5f724d6cff2",
+    "https://raw.githubusercontent.com/Ichinose-Kazuki/lume-github-style/main/plugins.ts": "45f07d8f47f7cf88d8906d93c518ff269ffe43273f0948e5e2064fb193925010",
+    "https://raw.githubusercontent.com/Ichinose-Kazuki/lume-github-style/main/src/archive.page.js": "b61feda2a508a91225df346c313a6a7e0e7902f6fb5bbf9c744af6c5b372149c",
+    "https://raw.githubusercontent.com/Ichinose-Kazuki/lume-github-style/main/src/archive_result.page.js": "0b40382fb881a044a2fffa75927c979c4403c472a7ac390c81bd51907d3e28c7"
   }
 }

@@ -2,14 +2,12 @@
 
 ## lume
 ### Plugins
-- Favicon
+- Attributes
 - Code Highlight
 - Date
-- Attributes
-- Pagefind
+- Favicon
 - Katex
-- LumeCMS
-- Redirects
+- Pagefind
 
 ### Theme
 - Simple Blog

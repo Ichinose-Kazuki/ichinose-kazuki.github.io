@@ -1,3 +1,15 @@
 # ichinose-kazuki.github.io
 
-hugo theme: github-style ([link](https://themes.gohugo.io/themes/github-style/))
+## lume
+### Plugins
+- Favicon
+- Code Highlight
+- Date
+- Attributes
+- Pagefind
+- Katex
+- LumeCMS
+- Redirects
+
+### Theme
+- Simple Blog

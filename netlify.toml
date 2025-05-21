@@ -6,5 +6,5 @@ TZ = "Asia/Tokyo"
 
 [build]
 publish = "public"
-command = "git config core.quotepath false && hugo --gc --minify"
+command = "git submodule update --init && git config core.quotepath false && hugo --gc --minify"
 
